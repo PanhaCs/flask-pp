@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "admin/layout/head.html" %}
+
+<body class="g-sidenav-show   bg-gray-100">
+  <div class="min-height-600 position-absolute w-100" style="background-color: rgb(180, 198, 198);"></div>
+  {% include "admin/layout/menu.html" %}
+  <main class="main-content position-relative border-radius-lg " style="background-color: rgb(180, 198, 198);">
+    <!-- Navbar -->
+    {% include "admin/layout/navba.html" %}
+    <!-- End Navbar -->
+    {% block main_content %}
+
+    {% endblock %}
+
+  </main>
+  {% include "admin/layout/configerator.html" %}
+
+  {% include "admin/layout/footer_js.html" %}
+
+  {% block vue %}
+
+  {% endblock %}
+</body>
+
+</html>
